@@ -1,0 +1,75 @@
+<?php
+
+    echo"<center>";
+    echo"<table border=3px>";
+        echo"<tr>";
+            echo "<td>";
+                echo"Abaixo de 18,5   ";
+            echo"</td>";
+            echo"<td>";
+                echo"   Excesso de Magreza";
+            echo"</td>";
+        echo"</tr>";
+
+        echo"<tr>";
+            echo"<td>";
+                echo"18,5 - 24,9";
+            echo"</td>";
+            echo"<td>";
+                echo"Peso Normal";
+            echo"</td>";
+        echo"</tr>";
+
+        echo"<tr>";
+            echo "<td>";
+                echo"25 - 24,9";
+            echo"</td>";
+            echo"<td>";
+                echo"Sobrepeso";
+            echo"</td>";
+        echo"</tr>";
+
+        echo"<tr>";
+            echo"<td>";
+                echo"30 - 34,9";
+            echo"</td>";
+            echo"<td>";
+                echo"Obesidade Grau 1";
+            echo"</td>";
+        echo"</tr>";
+
+        echo"<tr>";
+            echo"<td>";
+                echo"35 - 39,9";
+            echo"</td>";
+            echo"<td>";
+                echo"Obesidade Grau 2";
+            echo"</td>";
+        echo"</tr>";
+
+        echo"<tr>";
+            echo"<td>";
+                echo"Acima de 40";
+            echo"</td>";
+            echo"<td>";
+                echo"Thais Carla";
+            echo"</td>";
+        echo"</tr>";
+    echo"</table border>";
+
+    $peso = 60;
+    $altura = 1.70;
+    $imc = $peso / ($altura * $altura); 
+    if ($imc < 18.5) {
+        echo "Abaixo do Peso";
+    } elseif ($imc >= 18.5 && $imc < 25) {
+        echo "Normal";
+    } elseif ($imc >= 25 && $imc < 30) {
+        echo "Sobrepeso";
+    } elseif ($imc >= 30 && $imc < 35) {
+        echo "Obesidade Grau 1";
+    } elseif ($imc >= 35 && $imc <= 40) {
+        echo "Obesidade Grau 2";
+    } else {
+        echo "Obesidade Grau 3";
+    }
